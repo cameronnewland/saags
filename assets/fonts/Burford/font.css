@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'BurfordBase';
+  src: url('BurfordBase.eot');
+  src: url('BurfordBase.eot?#iefix') format('embedded-opentype'),
+       url('BurfordBase.woff2') format('woff2'),
+       url('BurfordBase.woff') format('woff'),
+       url('BurfordBase.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+

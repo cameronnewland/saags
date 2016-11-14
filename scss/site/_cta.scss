@@ -1,0 +1,29 @@
+.page-ca-transparency-act {
+	background-color:$white;
+	color:$black;
+}
+
+.cta_hero {
+	background-image:url(../assets/img/cta/cta-hero.jpg);
+}
+
+.page-ca-transparency-act {
+	padding:3rem 0;
+}
+
+.page-ca-transparency-act h3 {
+	font-size:2rem;
+	color:$black;
+}
+
+.page-ca-transparency-act strong {
+	display:block;
+	margin-bottom:-1rem;
+	font-weight:normal;
+}
+
+.page-ca-transparency-act strong.inline-block {
+	display:inline-block;
+	margin-bottom:0;
+	font-weight:800;
+}

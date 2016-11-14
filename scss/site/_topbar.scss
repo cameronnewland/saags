@@ -1,0 +1,251 @@
+// Add some whitespace between top bar and content
+.top-bar-container, .tab-bar {
+
+	@media only screen and (max-width: ($topbar-breakpoint)) {
+		.top-bar-left {
+			li.name {
+				padding-left: rem-calc(50);
+			}
+
+			li.toggle-topbar a, li.menu-icon {
+				position: absolute;
+				left: 0;
+			}
+
+		}
+
+		.top-bar-right {
+			li.toggle-topbar a, li.menu-icon {
+				position: absolute;
+				right: 0;
+			}
+		}
+	}
+
+	.top-bar-logo-container ul {
+		list-style-type:none;
+		margin:0 auto;
+	}
+
+	.top-bar-section ul li:not(.has-form):not(.top-bar-logo) {
+		margin: 1rem 0.9275rem 0;
+		height: auto;
+		display: inline-block;
+		padding:3rem 0.25rem;
+		letter-spacing: -0.125rem;
+	}
+
+	.top-bar-section ul.left li {
+		margin: 1rem 1.25rem 0 !important;
+	}
+
+	.top-bar-section ul li.has-dropdown ul.dropdown {
+		margin-top: 3rem;
+		min-width:150px;
+		z-index:9 !important;
+	}
+
+	.top-bar-section ul.right li.has-dropdown ul.dropdown {
+		margin-right: -4rem;
+	}
+
+	.top-bar-section ul.right li:last-child {
+		margin-right:0;
+		padding-right:0;
+	}
+
+	.top-bar-section ul li.has-dropdown ul.dropdown li {
+		border: 0;
+		height: auto;
+		margin:0;
+		padding: 0.5rem 2rem;
+		min-width: 12rem;
+		background-color:$saags-light-brown-ninety;
+	}
+
+	.top-bar-section ul li.has-dropdown ul.dropdown li:hover a {
+	}
+
+	.top-bar-section ul li.has-dropdown ul.dropdown li.back {
+		display:none;
+	}
+
+	.top-bar-section ul li.has-dropdown ul.dropdown li a {
+		border:none !important;
+	}
+
+	.top-bar-section ul li.has-dropdown ul.dropdown li.first-child a {
+		padding-top: 1rem;
+	}
+
+	.top-bar-section ul li.has-dropdown ul.dropdown li:last-child a {
+		padding-bottom:1rem;
+	}
+
+	.top-bar-section li:not(.has-form) a:not(.button) {
+		background:transparent;
+		border-bottom:2px solid $black;
+		line-height:140%;
+		text-transform: uppercase;
+		padding:0;
+		display:inline-block;
+	}
+	.top-bar-section li:not(.has-form):hover a:not(.button), .top-bar-section li.active:not(.has-form) a:not(.button) {
+		border-bottom:2px solid $saags-light-brown;
+		text-align:center;
+	}
+
+	.top-bar-logo {
+		height:0;
+		overflow:visible;
+		background:transparent;
+		margin-bottom: -1rem;
+		/* the following rule seems to have an issue right at 1980px width */
+		@media #{$xlarge-up}{
+			margin-bottom:-2rem;
+		}
+		a {
+			background:transparent !important;
+			border:none !important;
+			img {
+				max-width:14rem;
+				@media #{$large-up}{
+					max-width:19rem;
+					margin-right: 20px;
+				}
+			}
+		}
+	}
+	.top-bar-logo, .top-bar-logo a, .top-bar-logo a img {
+		z-index:10 !important;
+	}
+	.tab-bar {
+		z-index:10;
+	}
+
+	.top-bar-section .has-dropdown>a {
+	    padding-right: 0 !important;
+	}
+
+	nav.hide-for-large-up .text-center {
+		margin:0 auto;
+		height:6rem;
+		max-width:35%;
+	}
+
+	nav.hide-for-large-up .top-bar-logo {
+		margin-top:0px !important;
+	}
+
+}
+
+@media #{$large-up}{
+	ul.social li {
+		margin: 0 0.8rem !important;
+	}
+}
+
+ul.social li a, ul.social li a i.fa {
+	font-size:1.25em;
+	@media #{$large-up}{
+		font-size:1.1em;
+	}
+}
+
+@media #{$xlarge-up}{
+	.top-bar-logo {
+		margin-left:1.5rem;
+	}
+}
+
+.left-small {
+	border-right: 0;
+}
+
+.right-small {
+	border-left: 0;
+}
+
+.top-bar .name {
+	h1 a { font-weight: 500; }
+}
+
+.tab-bar .menu-icon span::after {
+    width: 2rem;
+}
+
+.right-submenu .back > a:after {
+	display:none;
+}
+
+.right-submenu .back > a:before {
+	content: "\AB";
+    margin-left: .5rem;
+    display: inline;
+}
+
+.right-submenu .back > a, ul.off-canvas-list li label {
+	background:$saags-red;
+	color:$white;
+	border:none;
+}
+
+ul.off-canvas-list li label {
+	font-size:2rem;
+}
+
+ul.right-submenu li a:focus, ul.right-submenu li a:hover, ul.off-canvas-list li a:hover {
+	background-color:$black !important;
+}
+
+.top-bar-section .has-dropdown > a:after {
+    border-top-style: none;
+}
+
+// Switch between the mobile menu (tab-bar) and desktop menu (topbar) based on a custom $topbar-breakpoint value.
+// The $topbar-breakpoint can be edited in _custom-settings.scss.
+
+@media only screen and (min-width: ($topbar-breakpoint + em-calc(1))) {
+  .tab-bar { display: none; }
+
+  .top-bar {
+  	height: auto;
+  	z-index:10;
+  }
+}
+
+// Hide the topbar when the screen size is smaller than the topbar breakpoint
+@media only screen and (max-width: $topbar-breakpoint) {
+  body.offcanvas .top-bar { display: none; }
+}
+
+/* Mobile Off-Canvas Menu Styling */
+
+.right-off-canvas-menu {
+	ul.off-canvas-list {
+		li {
+			a {
+				border-bottom: none;
+				padding: 1rem 1rem 1rem 8rem;
+				text-transform: uppercase;
+				font-size:3rem;
+				color:$saags-light-brown;
+				font-family:'BurfordBase';
+			}
+			&.logo {
+				margin:19px auto;
+				a {
+					padding:0.75rem 0;
+					img {
+						max-width:60%;
+					}
+				}
+			}
+			&.has-submenu {
+				> a:before {
+					display:none;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,661 @@
+/* Recipes Single Styles */
+
+/* body.single-recipes */
+
+body.single-recipes {
+	section.container {
+		background-color:$white;
+	}
+}
+
+.recipes_single_hero {
+	background-image:url(../assets/img/recipes/recipes-single-hero-for-test-recipe.jpg);
+	background-size:cover;
+	background-position:center top;
+	padding-top:25%;
+	&.smoked-sausage {
+		background-image:url(../assets/img/products/products-hero-smoked-sausage.jpg);
+	}
+	&.saags-naturals {
+		background-image:url(../assets/img/products/products-hero-natural-sausage.jpg);
+	}
+	&.gourmet-deli-meats {
+		background-image:url(../assets/img/products/products-hero-deli-meats.jpg);
+	}
+}
+
+.recipes_single_recipe_image_container {
+	margin-top:-3rem;
+}
+
+@media #{$large-up}{
+	.recipes_single_recipe_image_container {
+		margin-top:-7rem;
+	}	
+}
+
+.recipes_single_recipe_social div, .recipes_single_recipe_social a {
+	font-family: 'UniversLTPro-65Bold';
+	font-size:1.25rem;
+	line-height:3rem;
+	vertical-align: middle;
+	color:$black;
+	padding:0;
+}
+
+body.single-recipes .tagline, body.single-recipes .tagline p, body.single-recipes .tagline p span {
+	color:#666;
+}
+
+@media #{$large-up}{
+	body.single-recipes .comments {
+		font-size:1rem;
+		padding-left: 0.9375rem;
+		border-right: none;
+	}
+	body.single-recipes .tagline, body.single-recipes .tagline p, body.single-recipes .tagline p span {
+		font-size:1.15rem;
+		font-family: 'UniversLTPro-55Roman';
+		@media #{$large-up}{
+			font-size:1rem;
+		}
+	}
+}
+
+body.single-recipes .comments_count {
+	height:2rem;
+	background-image:url(../assets/img/components/comment-bubble-red.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+	width:3rem;
+	color:$white;
+    font-size: 1.5rem;
+    line-height: 2rem;
+	padding-left: 0.75rem;
+	text-align:initial;
+	margin-right:0.5rem;
+	@media #{$large-up}{
+		height:1.5rem;
+		width:2rem;
+		font-size: 1rem;
+		line-height: 1.25rem;
+		padding-left: 0.4rem;
+		padding-top: 3px;
+	}
+}
+
+.share_icon {
+	height:2.5rem;
+	background-image:url(../assets/img/components/share-icon-34x34.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+	width:2.5rem;
+	margin-right:1rem;
+}
+
+.recipe_share {
+	border-right:0 !important;
+}
+
+.recipes_single_recipe_meta {
+	margin-top:2.5rem !important;
+}
+
+.recipes_single_recipe_meta_item {
+	width:auto;
+}
+
+.meta_value {
+	font-size:4rem;
+	line-height:100%;
+	font-family: 'UniversLTStd-LightUltraCn';
+	color:$saags-grey;
+	margin-top:5px;
+	@media #{$large-up}{
+		margin-top:10px;
+		font-size:5rem;
+	}
+}
+
+.section_label {
+	font-size:2.25rem;
+	font-family:"BurfordBase";
+	margin-bottom:0;
+	color:$black;
+}
+
+.section_label_light_brown_block {
+	border-bottom:2px solid $saags-light-brown;
+	margin-bottom:2rem;
+}
+
+body.single-recipes li {
+	color:$saags-medium-grey;
+	font-size:2rem;
+	line-height:150%;
+	margin:0.5rem 0;
+	font-family: 'UniversLTPro-55Roman';
+	@media #{$large-up}{
+		font-size:1rem;
+		margin:0.4rem 0;
+	}
+}
+
+body.single-recipes .container ul {
+	li {
+		color:#666;
+	}
+}
+
+.recipes_single_ingredients_container {
+	margin:4rem 0;
+}
+
+.rw-rating-table {
+	display:none;
+}
+
+.load-comments-button {
+	font-size:3.5rem;
+	padding:1rem 1rem 0;
+	margin:1rem 0 3rem;
+	background-color: #b6aea6;
+	color:$white;
+	display:inline-block;
+	font-family: 'UniversLTStd-LightUltraCn' !important;
+}
+
+.recipe_sharing {
+    top: 4rem;
+    left: -205%;
+    width: 309%;
+    display:none;
+    z-index:10000;
+}
+
+@media #{$large-up}{
+	.recipe_sharing {
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    display:block;
+	}
+}
+
+.recipe_sharing .row {
+	background-color:$saags-light-grey;
+	padding:1rem 0;
+}
+
+@media #{$large-up}{
+	.recipe_sharing .column {
+		background-color:$white;
+		text-align:center;
+		padding:1rem 0;
+	}
+	.recipe_sharing .row {
+		background-color:$white;
+		padding:0;
+	}
+}
+
+.recipe_sharing i.fa, .recipe_sharing .social_sharing_label {
+	color:$saags-medium-grey;
+	clear:both;
+}
+
+.recipe_sharing i.fa {
+	font-size:2rem;
+	vertical-align: middle;
+}
+
+@media #{$large-up}{
+	.recipe_sharing i.fa {
+		font-size:1rem;
+		vertical-align: middle;
+	}
+
+	.recipe_sharing .row .column:hover i.fa, .recipe_sharing .row .column:hover .social_sharing_label {
+		color:$black;
+	}
+
+	.recipe_sharing .row .column:hover .social_sharing_label {
+		font-family: 'UniversLTPro-65Bold';
+	}
+}
+
+.recipe_sharing .social_sharing_label {
+	display:inline-block;
+	font-size:1rem;
+}
+
+@media #{$large-up}{
+	.recipe_sharing .social_sharing_label {
+		font-family: 'UniversLTPro-65Bold';
+		font-size:0.8rem;
+		vertical-align: bottom;
+		line-height: 1.2rem;
+	}
+}
+
+.recipe_triangle {
+    top: 1rem;
+    left: -5%;
+    width: 5%;
+    height:1rem;
+    // display:none;
+    background-image:url(../assets/img/components/recipes-triangle.png);
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+
+/* These lines just hide some elements of the homepage recipes widget that aren't supposed to appear on the single recipes template. Once we get recipes in and this widget can be properly built-out, this can be removed. */
+
+body.single-recipes .homepage_recipes_header, body.single-recipes .homepage_recipes_recipe:nth-child(5), body.single-recipes .homepage_recipes_recipe:nth-child(6), body.single-recipes .homepage_recipes_recipe:nth-child(7), body.single-recipes .homepage_recipes_recipe:nth-child(8), body.single-recipes .homepage_recipes_recipe:nth-child(9), body.single-recipes .homepage_recipes_recipe:nth-child(10) {
+	display:none !important;
+}
+
+@media #{$large-up}{
+	body.single-recipes .homepage_recipes_recipe:nth-child(4), {
+		display:none !important;
+	}
+}
+
+.single-recipes h1.title {
+	color:$white;
+	background-color:#b6aea6;
+	padding:15px 15px 5px;
+	display:inline-block;
+	font-size:4rem;
+	@media #{$large-up}{
+		padding:15px 0 0;
+		box-shadow: 10px 0 0 #b6aea6, -10px 0 0 #b6aea6;
+		display:inline;
+	}
+}
+
+.meta_label, .meta_label_bottom {
+	text-transform:uppercase;
+}
+
+.meta_label, .meta_label_bottom, .meta_value {
+	color:#666;
+}
+
+@media #{$large-up}{
+	.meta_label, .meta_label_bottom {
+		font-size:0.75rem;
+		line-height:100%;
+		text-transform:uppercase;
+	}
+	.section_label {
+		font-size:1.5rem;
+		color:$black;
+	}
+}
+
+.pairing_tip {
+	margin-top:3rem;
+}
+
+.pairing_tip_content, .pairing_tip_content p, .pairing_tip_content p span {
+	font-size:2rem;
+	color:#808080;
+	font-family: 'UniversLTPro-55Roman';
+	line-height:150%;
+	@media #{$large-up}{
+		font-size:1rem;
+	}
+}
+
+.meta_value.difficulty {
+	height:3.75rem;
+	width:3.5rem;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center center;
+	display:inline-block;
+	@media #{$large-up}{
+		height:3.7rem;
+		margin:10px 0 0.8rem;
+	}
+}
+
+.meta_value.difficulty.Easy {
+	background-image:url(../assets/img/recipes/easy.png);
+}
+
+.meta_value.difficulty.Intermediate, .meta_value.difficulty.Medium {
+	background-image:url(../assets/img/recipes/intermediate.png);
+}
+
+.meta_value.difficulty.Difficult {
+	background-image:url(../assets/img/recipes/difficult.png);
+}
+
+.difficulty_label {
+	text-transform:uppercase;
+}
+
+.printfriendly {
+	display:none;
+}
+
+@media #{$large-up}{
+	.recipes_single_recipe_meta_item {
+		border-right:2px solid $saags-grey;
+	}
+
+	.recipes_single_recipe_meta_item:last-child {
+		border-right:none;
+	}
+}
+
+body.single-recipes {
+	.try_these_recipes {
+		background-color:$black;
+		margin-top:0;
+		@media #{$large-up}{
+			padding-top:1rem;
+			background-color:transparent;
+		}
+	}
+	section.container {
+		div.show-for-large-up {
+			> div.row {
+				> div.column.large-6:first-child {
+					padding-top:50px;
+				}
+			}
+		}
+	}
+}
+
+.try_these_recipes_container {
+	padding:2rem 0 3rem;
+}
+
+.try_these_recipes_black_line, .black_line {
+	border-top:3px solid $black;
+	z-index:0;
+}
+
+// .try_these_recipes_white_line, .white_line {
+// 	border-top:3px solid $white;
+// 	z-index:0;
+// }
+
+.try_these_recipes h3, h3.with_black_line_behind {
+	display:inline-block;
+	z-index:1;
+	padding:0 1rem;
+	font-size:2.5rem;
+	@media #{$large-up}{
+	}
+}
+
+@media #{$large-up}{
+	.try_these_recipes h3, h3.with_black_line_behind {
+		font-size:1.5rem;
+		top: -1.5rem;
+	}
+}
+
+.try_these_recipes_recipe {
+	display:block;
+	padding-top:35%;
+	background-size:cover;
+	background-repeat:no-repeat;
+    float: left;
+    height: auto;
+    width: 50%;
+}
+
+.try_these_recipes_recipe a.recipes_color_overlay > div {
+		padding:5%;
+}
+
+.try_these_recipes_recipe.recipes_color_overlay {
+	display:block;
+}
+
+.nutrition_facts_image {
+	width:100%;
+	height:auto;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@media #{$large-up}{
+	.try_these_recipes_recipe {
+	    width: 32.66666666%;
+	    padding-top:18%;
+	}
+	.try_these_recipes_recipe:nth-child(4){
+		display:none;
+	}
+
+	.try_these_recipes_recipe:nth-child(1), .try_these_recipes_recipe:nth-child(2) {
+		margin-right:1%;
+	}
+
+	.try_these_recipes_recipe.recipes_color_overlay {
+		display:none;
+	}
+	.try_these_recipes_recipe:hover > a.recipes_color_overlay {
+		display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+		display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+		display: -ms-flexbox;      /* TWEENER - IE 10 */
+		display: flex;
+		-webkit-box-align: center;
+		-webkit-flex-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+		-webkit-flex-pack: center;
+		flex-pack: center;
+		-webkit-box-pack: center;
+		box-pack: center;
+		justify-content: center;
+	}
+	.see_recipe_cta.show-for-large-up {
+		display:inline-block !important;
+	}
+}
+
+.hide-for-large-up .recipes_single_comments {
+	display:none;
+}
+
+.recipes_single_comments {
+	padding:4rem 0;
+	background-color:$black;
+	.comment-reply-title {
+		font-family: 'UniversLTPro-65Bold';
+		color:$monsoon;
+		font-size:2rem;
+		@media #{$large-up}{
+			font-size:1.25rem;
+		}
+	}
+
+	.comment-form-comment label, #respond label {
+		font-size:2rem !important;
+		@media #{$large-up}{
+			font-size:1rem !important;
+		}
+	}
+
+	.comment-form .comment-form-comment textarea, .comment-form input[type="text"] {
+		background-color:#1b1b1b !important;
+		color:$white !important;
+		border:none !important;
+		box-shadow:none !important;
+		font-size:2rem;
+		padding:1rem;
+		height:auto;
+		@media #{$large-up}{
+			font-size:1rem;
+		}
+	}
+
+	.comment-form input[type="submit"] {
+		border: 0;
+		padding: 0.5rem 1rem;
+		text-transform: uppercase;
+		font-family: 'BurfordBase' !important;
+		font-size: 2.5rem;
+		float:right;
+		background-color:#9d9288;
+		@media #{$large-up}{
+			font-size: 1.5rem;
+			padding: 0.1rem 1rem 0;
+		}
+		&:hover {
+			background-color:darken(#9d9288,10%);
+		}
+	}
+
+	.comments_centered_line_bg {
+		margin-bottom:1rem;
+	}
+	// #respond {
+	// 	@media #{$large-up}{
+	// 		max-height:350px;
+	// 	}
+	// 	overflow:hidden;
+	// }
+	.comments_centered_label {
+		font-family: 'UniversLTStd-LightUltraCn';
+		font-size:4rem;
+		letter-spacing:0;
+		@media #{$large-up}{
+			font-size:2.5rem;
+		}
+	}
+}
+
+.recipe_time_left, .recipe_time_right {
+	display:inline-block;
+	float: left;
+}
+
+.recipe_time_right {
+	margin-left: 0.5rem;
+	@media #{$large-up}{
+		margin-left: 1rem;
+	}
+}
+
+.pairing_tip_heading {
+	margin-top:3rem;
+}
+
+.recipes_single_directions_container {
+	margin-top:35px;
+}
+
+/* Taken from Joseph's code in the template: */
+
+.single-recipes {
+	.rw-ui-star.rw-size-small.rw-style-oxygen .rw-ui-stars li {
+	    background-image: url('/wp-content/themes/saags/assets/img/recipes/oxygen.s.png')!important; } 
+	section#respond {display:none}
+	.comment-respond {
+		// height:227px;
+	}
+	#comments {
+		h3 {
+			display:none;
+		}
+		.comment-list {
+			list-style-type:none;
+			margin:0;
+			li.comment:first-child {
+			}
+			ul.children li.comment:first-child {
+				border-top: none;
+			}
+		}
+		li.comment {
+			border-top: 1px solid #191919;
+			padding-top: 1rem;
+			.vcard {
+				border:none;
+				cite, cite a {
+					color:#9d9288 !important;
+					font-style: normal;
+					display:inline-block;
+					text-transform: initial;
+					font-size:1.75rem;
+					@media #{$large-up}{
+						font-size:1rem;
+					}
+				}
+				cite {
+					margin-right:1rem;
+				}
+				time, time a {
+					color:#9d9288;
+					font-weight:normal;
+					text-transform:capitalize;
+					font-size:1.5rem;
+					@media #{$large-up}{
+						font-size:1rem;
+					}
+				}
+			}
+			.reply {
+				height:4rem;
+				padding-top:1rem;
+				border-top: 1px solid #000;
+			}
+			.reply a {
+				background-color:#9d9288;
+				color:$white;
+				padding:0.25rem 3rem;
+				line-height:100%;
+				font-family: 'BurfordBase';
+				text-transform:uppercase;
+				display:inline-block;
+				height:auto;
+				width:auto;
+				font-size:2.5rem;
+				float:right;
+				@media #{$large-up}{
+					padding: 0rem 2rem;
+					font-size:1.5rem;
+				}
+			}
+			.reply a:hover {
+				background-color:darken(#9d9288,10%);
+			}
+			section.comment p {
+				color:$white;
+				font-size:1.75rem;
+				font-weight:normal;
+				margin-left:48px;
+				padding-left:1rem;
+				text-transform: initial;
+				font-family: 'UniversLTPro-55Roman';
+				@media #{$large-up}{
+					font-size:1rem;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,536 @@
+.products_archive {
+	padding-bottom:3rem;
+	background-color:$white;
+	.select2-container .select2-choice {
+		background-color: #e6e4e1;
+		color:$black;
+		text-transform:none;
+	}
+	.select2-container .select2-choice .select2-arrow b {
+		background-size:initial !important;
+	}
+	.select2-container .select2-choice {
+		@media #{$large-up}{
+			height: auto;
+			padding: 0.5rem 1rem 0.2rem;
+		}		
+		> .select2-chosen {
+			padding-top:1px;
+			@media #{$large-up}{
+				font-size:1rem;
+			}
+		}
+	}
+}
+
+body.post-type-archive-products {
+	.select2-results .select2-result-label {
+		text-align: center;
+	}
+}
+
+.products-archive-product {
+	margin:1rem 0;
+}
+
+.products-archive-product-title {
+	font-size:1.75rem;
+	color:$black;
+	font-family: 'UniversLTPro-45Light';
+	letter-spacing: 0px;
+	margin-top: 10px;
+	@media #{$large-up}{
+		font-size:1rem;
+	}
+	span.regtm {
+		vertical-align: super;
+		font-size:1rem;
+		@media #{$large-up}{
+			font-size:0.5rem;
+		}
+	}
+}
+
+.products-archive-product:hover .products-archive-product-title {
+	font-weight:800;
+}
+
+.products_archive_hero {
+	background-image:url(../assets/img/products/products-hero-smoked-sausage.jpg);
+	padding-top:26.166666667%;
+	background-size:cover;
+}
+
+.products_single_hero.smoked-sausage, .products_archive_hero.smoked-sausage {
+	background-image:url(../assets/img/products/products-hero-smoked-sausage.jpg);
+}
+
+.products_single_hero.naturals, .products_archive_hero.naturals {
+	background-image:url(../assets/img/products/products-hero-natural-sausage.jpg);
+}
+
+.products_single_hero.deli-meats, .products_archive_hero.deli-meats {
+	background-image:url(../assets/img/products/products-hero-deli-meats.jpg);
+}
+
+@media #{$large-up}{
+	.products_archive_filter_item, .social_archive_filter_item {
+		float:left;
+		display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+		display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+		display: -ms-flexbox;      /* TWEENER - IE 10 */
+		display: flex;
+		-webkit-box-align: center;
+		-webkit-flex-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+		-webkit-flex-pack: center;
+		flex-pack: center;
+		-webkit-box-pack: center;
+		box-pack: center;
+		justify-content: center;
+		flex-direction: column;
+		width:auto;
+		text-align:center;
+		height:4rem;
+	}
+
+	.social_archive_filter_item {
+		width:auto;
+	}
+}
+
+.products_archive_filter_item:last-child, .social_archive_filter_item:last-child {
+	border-right:none;
+}
+
+.products_archive_filter_item a, .social_archive_filter_item a, a.red-button {
+	font-size:1.75rem;
+	line-height:250%;
+	color:$black;
+	padding:0.75rem 1.5rem;
+	min-width:10rem;
+	background-color:#e6e4e1;
+	border-radius:1rem;
+	margin-left:1rem;
+}
+
+.products_archive_filter_item a.active, .social_archive_filter_item a.active, a.red-button.active {
+	color:$white;
+	background:$saags-light-brown;
+}
+
+a.red-button:hover {
+	
+}
+
+.alert-box.alert {
+    font-size: 2rem;
+}
+
+@media #{$large-up}{
+	.products_archive_filter_item a, .social_archive_filter_item a {
+		font-size:0.8rem;
+		color:$black;
+		padding:0.5rem 1rem 0.2rem;
+		line-height:130%;
+	}
+
+	.products_archive_filter_item a.active, .social_archive_filter_item a.active {
+	}
+
+	 .products_archive_filter_item a:hover, .social_archive_filter_item a:hover {
+	 }
+
+	.alert-box.alert {
+	    font-size: 0.8125rem;
+	}
+}
+
+.products_archive_category_filter_label, .social_archive_category_filter_label {
+	display:none;
+	font-size:2rem;
+	color:$black;
+}
+
+.products_archive_category_filter_label.active, .social_archive_category_filter_label.active {
+	display:block;
+	text-align:center;
+}
+
+@media #{$large-up}{
+	.products_archive_category_filter_label.active, .social_archive_category_filter_label.active {
+		display:inline-block;
+	}
+	.products_archive_category_filter_label, .social_archive_category_filter_label {
+		font-size:1.75rem;
+	}
+	.products_archive_category_filter_label.filter-all.active {
+		margin-left:19%;
+	}
+	.diet_filter {
+		display: inline-block;
+		margin-left: 1rem;
+	}
+}
+
+.category_label_and_diet_filter_container {
+	padding:2rem 0;
+	text-align:center;
+}
+
+.no-results-text {
+	display:none;
+}
+
+.products-archive-photo {
+	height:120px;
+	background-size:contain !important;
+	background-position:center center !important;
+	background-repeat:no-repeat !important;
+	position:relative;
+	margin:0 auto;
+	opacity:1;
+}
+
+.products-archive-product:hover .products-archive-photo {
+	opacity:0.5;
+}
+
+.products-archive-product a {
+	display:inline-block;
+	margin:0 auto;
+	width: 90%;
+}
+
+@media #{$large-up}{
+	.products-archive-product a {
+		display:inline-block;
+		margin:0 auto;
+		width: 70%;
+	}
+}
+
+.products_archive_filter_dropdown {
+	padding:0 0 2rem;
+}
+
+.products_archive_filter_dropdown_toggle {
+	display:block;
+	background-color:$saags-light-grey;
+	padding: 1rem 0;
+}
+
+.products_archive_filter_dropdown_toggle h2, .products_archive_filter_dropdown {
+	display:none;
+}
+
+.products_archive_filter_dropdown.active {
+	display:block;
+}
+
+.products_archive_filter_dropdown_toggle h2.active {
+	display:inline-block;
+	margin:0 auto;
+	color:$black;
+}
+
+.products_archive_filter_dropdown_toggle h2 {
+	line-height:200%;
+}
+
+.vertical-divider {
+	width:95%;
+	margin: 1rem auto 2.5rem;
+	border-bottom:1px solid $black;
+}
+
+.dropdown-toggle {
+	background-position:center center;
+	background-repeat:no-repeat !important;
+	height:1.6875rem;
+	width:1.5rem;
+	margin-right:1rem;
+	margin-top:1.6875rem;
+	@media #{$large-up}{
+		background-size: contain !important;
+	}
+}
+
+.dropdown-toggle.collapsed {
+	background:url('../assets/img/sales/down-arrow.png');
+}
+
+.all-products-container {
+	display:none;
+}
+
+select.diet_dropdown {
+	padding:0.5rem 2rem;
+	font-size:2rem;
+	
+	height:auto;
+	text-transform: uppercase;
+}
+
+#submit-a-recipe {
+	background-color:#fff;
+	color:#000;
+	@media #{$large-up}{
+		padding:75px;
+	}
+	h2 {
+		color:#000;
+		font-size:3rem;
+		@media #{$large-up}{
+			font-size:2.5rem;
+		}
+	}
+	.gform_heading {
+		display:block;
+		text-align:center;
+		p {
+			text-align:left;
+			font-size:1.5rem;
+			line-height:130%;
+		}
+
+		.gform_title {
+			text-transform: uppercase;
+			color:$black;
+			font-size:3rem;
+		}
+	}
+
+	input, .select2-container .select2-choice, textarea {
+		background-color:#ddd9d5;
+		border: none;
+		box-shadow:none;
+		padding:2rem 0 2rem 2rem;
+		font-size:1.5rem;
+		width:100%;
+		display:block;
+		border-radius:5px;
+	}
+
+	.select2-container {
+		margin:0 0 1rem;
+		width:100%;
+		display:block;
+	}
+
+	.select2-container .select2-choice {
+		padding: 1rem 0 1rem 1rem !important;
+	}
+
+	/* Two Fields Per Row */
+
+	#field_2_4, #field_2_8 {
+		display:inline-block !important;
+		float:left !important;
+		width:48.5% !important;
+		clear:none !important;
+	}
+
+	/* Left Row (2 per row) */
+
+	#field_2_4 {
+		margin-right: 3%;
+	}
+
+	/* Three Fields Per Row */
+
+	#field_2_6, #field_2_7, #field_2_5 {
+		display:inline-block !important;
+		float:left !important;
+		width:31.3333333% !important;
+		clear:none;
+	}
+
+	/* Left and Center Row (3 per row) */
+
+	#field_2_6, #field_2_5 {
+		margin-right: 3%;
+	}
+
+	.gform_footer.top_label {
+		margin:0;
+		padding:0;
+		input[type="submit"] {
+			background-color:transparent;
+			color:$black;
+			transition:none;
+			padding: 0;
+			margin:0;
+			text-decoration:underline;
+			text-transform: uppercase;
+			font-family: 'BurfordBase';
+			font-size: 2rem;
+			margin-top: -25px;
+			display:inline-block;
+			width:auto;
+			float:right;
+			@media #{$large-up}{
+				font-size: 1.5rem;
+				margin-top: 25px;
+			}
+		}
+		input[type="submit"]:hover {
+		}
+	}
+
+	#field_2_14 {
+		padding:0;
+		margin: 3rem 0 1rem;
+		.ginput_container {
+			display:none;
+		}
+		label {
+			font-family:'BurfordBase';
+			font-size:2rem;
+			font-weight:normal;
+			text-transform:uppercase;
+			text-decoration:underline;
+			color:$black;
+			@media #{$large-up}{
+				font-size:1.5rem;
+				margin-top:25px;
+			}
+		}
+	}
+
+	.gform_wrapper .top_label .gfield_label {
+		margin:0;
+	}
+
+	.upload-photo-button {
+		display:block !important;
+		text-align:center;
+	}
+
+	.select2-chosen {
+		text-transform: capitalize;
+		font-size:1.5rem;
+	    line-height: 100%;
+	    padding: 0;
+	    color:$black;
+	    @media #{$large-up}{
+	    	font-size:1rem;
+	    }
+	}
+
+	.select2-container .select2-choice .select2-arrow b {
+		background-image: url(../assets/img/sales/down-arrow.png);
+		background-size: initial !important;
+		@media #{$large-up}{
+			background-size: 70% !important;
+		}
+	}
+
+	@media #{$large-up}{
+
+		.gform_heading {
+			p, p small {
+				font-size:1rem;
+				line-height:130%;
+			}
+
+			p small {
+				font-size:0.7rem;
+			}
+
+			.gform_title {
+				font-size:1.85rem;
+			}
+		}
+		input, .select2-container .select2-choice, textarea {
+			padding: 1rem 0 1rem 1rem;
+			font-size: 1rem;
+			height: auto;
+		}
+
+		/* Two Fields Per Row */
+
+		#field_2_12, #field_2_13, #field_2_14, .gform_footer.top_label {
+			display:inline-block !important;
+			float:left !important;
+			width:48.5% !important;
+			clear:none !important;
+		}
+
+		/* Left Row (2 per row) */
+
+		#field_2_12, #field_2_14 {
+			margin-right: 3%;
+		}
+
+		/* Three Fields Per Row */
+
+		#field_2_6, #field_2_7, #field_2_5 {
+			display:inline-block !important;
+			float:left !important;
+			width:31.3333333% !important;
+			clear:none;
+		}
+
+		/* Left and Center Row (3 per row) */
+
+		#field_2_6, #field_2_5 {
+			margin-right: 3%;
+		}
+
+		.gform_footer.top_label {
+			margin:0;
+			padding:0;
+			input[type="submit"] {
+
+			}
+			input[type="submit"]:hover {
+			}
+		}
+
+
+		#field_2_14 {
+			margin:0 3% 0 0;
+			padding:0;
+		}
+
+		.gform_wrapper .top_label .gfield_label {
+			margin:0;
+		}
+
+		.upload-photo-button {
+			display:block !important;
+			text-align:center;
+		}
+	}
+}
+
+@media #{$small-only} {
+	.select2-container .select2-choice {
+		padding: 0.5rem 0 0.5rem 1rem !important;
+		font-size:2rem !important;
+		line-height: 100% !important;
+
+	}
+	.select2-results .select2-result-label {
+		padding: 0.5rem 10% !important;
+		margin: 1rem 0 !important;
+		font-size:1.5rem !important;
+	}
+}
+
+@media #{$medium-only} {
+	.select2-container .select2-choice {
+		padding: 0.5rem 0 0.5rem 1rem !important;
+		font-size:2rem !important;
+		line-height: 100% !important;
+		
+	}
+	.select2-results .select2-result-label {
+		padding: 0.5rem 10% !important;
+		margin: 1rem 0 !important;
+		font-size:1.5rem !important;
+	}
+}

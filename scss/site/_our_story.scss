@@ -1,0 +1,256 @@
+.our_story_hero {
+	background-image:url(../assets/img/our-story/hero.jpg);
+	padding-top:46.916666666%;
+}
+
+.arrow {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	transition:0.5s;
+}
+
+.arrow_up {
+	border-left: 0.65rem solid transparent;
+	border-right: 0.65rem solid transparent;
+	border-bottom: 0.65rem solid black;
+}
+
+.arrow_down {
+	border-left: 0.65rem solid transparent;
+	border-right: 0.65rem solid transparent;
+	border-top: 0.65rem solid #f00;
+}
+
+.arrow_down.green-bg {
+	border-top-color: $saags-green;
+	background:transparent;
+    position: relative;
+    top: -0.5rem;
+}
+
+.arrow_up.orange-bg {
+	border-bottom-color: $saags-orange;
+	background:transparent;
+    position: relative;
+    top: 0.6rem;
+}
+
+.arrow_up.peach-bg {
+	border-bottom-color: $saags-peach;
+	background:transparent;
+    position: relative;
+    top: 0.6rem;
+}
+
+.arrow_up.light-brown-bg {
+	border-bottom-color: $saags-light-brown;
+	background:transparent;
+    position: relative;
+    top: 0.6rem;
+}
+
+.arrow_right {
+	border-top: 60px solid transparent;
+	border-bottom: 60px solid transparent;
+	border-left: 60px solid green;
+}
+
+.arrow_left {
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent; 
+	border-right:10px solid blue; 
+}
+
+.our_story_top_panel h2 {
+	font-size:3rem;
+	@media #{$large-up}{
+		font-size:2.25rem;
+	}
+}
+
+.our_story_section {
+	padding-top:100%;
+	background-size:100% auto;
+	transition:0.5s;
+	background-position:center top;
+	@media #{$large-up}{
+		padding-top:50%;
+	}
+	&:hover {
+		background-size:110% auto;
+		transition:0.5s;
+	}
+	.recipes-from-scratch:hover {
+		background-size:100% auto;
+	}
+	.our_story_column_title_container  {
+		height:100%;
+		width:100%;
+	}
+	.flex-block {
+		transition:0.5s;
+	}
+	&.old-world-tradition {
+		background-image:url(../assets/img/our-story/old-world-tradition-bg.jpg);
+		background-position:center bottom;
+		padding-top: 120%;
+		@media #{$large-up}{
+			padding-top:50%;
+		}
+		&:hover {
+			.flex-block.green-bg {
+				background-color: lighten($saags-green,10%);
+				transition:0.5s;
+			}
+
+			.arrow.green-bg {
+				border-top-color: lighten($saags-green,10%);
+				transition:0.5s;
+			}
+		}
+	}
+	&.wurstmeister-made {
+		background-image:url(../assets/img/our-story/wurstmeister-made-bg.jpg);
+		padding-top:115%;
+		@media #{$large-up}{
+			padding-top:50%;
+		}
+		&:hover {
+			.flex-block.orange-bg {
+				background-color: lighten($saags-orange,10%);
+				transition:0.5s;
+			}
+
+			.arrow.orange-bg {
+				border-bottom-color: lighten($saags-orange,10%);
+				transition:0.5s;
+			}
+		}
+	}
+	&.recipes-from-scratch {
+		background-image:url(../assets/img/our-story/recipes-from-scratch-bg.jpg);
+		&:hover {
+			.flex-block.peach-bg {
+				background-color: lighten($saags-peach,10%);
+				transition:0.5s;
+			}
+
+			.arrow.peach-bg {
+				border-bottom-color: lighten($saags-peach,10%);
+				transition:0.5s;
+			}
+		}
+	}
+	&.handcrafted-care {
+		background-image:url(../assets/img/our-story/handcrafted-care-bg.jpg);
+		padding-top:160%;
+		background-size:130% auto;
+		@media #{$large-up}{
+			background-size:100% auto;
+			padding-top:50%;
+		}
+		&:hover {
+			cursor:pointer;
+			.flex-block.light-brown-bg {
+				background-color: lighten($saags-light-brown,10%);
+				transition:0.5s;
+			}
+
+			.arrow.light-brown-bg {
+				border-bottom-color: lighten($saags-light-brown,10%);
+				transition:0.5s;
+			}
+			@media #{$large-up}{
+				background-size:110% auto;
+			}
+		}
+	}
+
+	.our_story_column_title {
+		font-size:2.5rem;
+		padding:4rem 0;
+		color:$white;
+		line-height: 100%;
+		&:hover {
+			color:$white;
+		}
+		&.white-bg {
+			color:$black;
+			font-size:1.5rem;
+			line-height:2.5rem;
+			text-decoration: underline;
+		}
+	}
+	.from-the-bottom {
+		bottom: 0;
+		left: 0;
+		top: inherit;
+		right: 0;
+		height: auto;
+	}
+	.below-bottom {
+		bottom: 0;
+		left: 0;
+		top: inherit;
+		right: 0;
+		height: 0;
+		width: 100%;
+		z-index: 1;
+	}
+	&.wurstmeister-made .below-bottom {
+		height:10.5rem;
+	}
+}
+
+.rise-up {
+	position:relative;
+	top:-10.5rem;
+}
+
+/* Reveal Modals */
+
+.our_story_modal {
+	padding:0;
+	min-height:0;
+	.our_story_modal_top_panel {
+		background-size:cover;
+		padding-top:50%;
+	}
+	.flex-block {
+		height:100%;
+		width:100%;
+		.our_story_modal_top_panel_title {
+			font-size:4rem;
+			@media #{$large-up}{
+				font-size:6rem;
+				letter-spacing: -0.5rem;
+			}
+		}
+	}
+	.our_story_modal_bottom_copy {
+		padding:4rem 10%;
+		p {
+			color:$black;
+		}
+	}
+	.close-reveal-modal {
+	    text-shadow: 2px 2px 4px #000;
+	}
+}
+
+#wurstmeister-made .our_story_modal_top_panel {
+	background-image:url(../assets/img/our-story/wurstmeister-made-modal-bg.jpg);
+}
+
+#old-world-tradition .our_story_modal_top_panel {
+	background-image:url(../assets/img/our-story/old-world-tradition-modal-bg.jpg);
+}
+
+#recipes-from-scratch .our_story_modal_top_panel {
+	background-image:url(../assets/img/our-story/recipes-from-scratch-modal-bg.jpg);
+}
+
+#handcrafted-care .our_story_modal_top_panel {
+	background-image:url(../assets/img/our-story/handcrafted-care-modal-bg.jpg);
+}

@@ -1,0 +1,258 @@
+/* Recipes Archive Styles */
+
+/* body.post-type-archive-recipes */
+
+body.post-type-archive-recipes {
+	section.container {
+		background-color:$white;
+		.load-more-button-container {
+			padding:2rem 0;
+			.load-more-button {
+				color:$black;
+				border-bottom:1px solid $black;
+				&:hover {
+					color:$saags-light-brown;;
+					border-bottom:1px solid $saags-light-brown;
+				}
+			}
+		}
+		.select2-container .select2-choice {
+			@media #{$large-up}{
+				height: auto;
+				padding: 0.5rem 1rem 0.2rem;
+			}		
+			> .select2-chosen {
+				padding-top:1px;
+				@media #{$large-up}{
+					font-size:1rem;
+				}
+			}
+		}
+	}
+	.select2-results .select2-result-label {
+		text-align: center;
+	}
+}
+
+.recipes_archive_filters {
+	padding:2rem 2%;
+}
+
+.recipes_slider {
+	background-size:cover;
+	display:block;
+	padding-top:25%;
+	display:block;
+	max-width:100%;
+	.absolute-block.flex-block {
+		> div {
+			text-align:center;
+			.centered-white-text-with-light-brown-semitransparent-background {
+				display:block;
+				text-align:center;
+				line-height:100%;
+			}
+		}
+	}
+}
+
+.recipes_slider_container {
+	padding-top:25%;
+	overflow:hidden;
+}
+
+.sort_by {
+	font-size:2rem;
+}
+
+.recipes_archive_filters input, .recipes_archive_filters select {
+	color:$black !important;
+	font-size:1.5rem !important;
+	padding:1rem 1.5rem !important;
+	height:auto;
+	border:0 !important;
+	box-shadow:none !important;
+}
+
+.recipes_archive_filters.hide-for-large-up .select2-container {
+	display:block;
+}
+
+.recipes_archive_filters.hide-for-large-up .select2-container .select2-choice {
+    padding: 1rem 0 1rem 1rem !important;
+}
+
+.recipes_archive_filters.hide-for-large-up .select2-chosen {
+	font-size:1.5rem;
+}
+
+.recipes_archive_filters.hide-for-large-up .column.small-4 {
+	padding:0 0.5rem;
+}
+
+.search {
+	background-color: #e6e4e1 !important;
+	border-radius:1rem !important;
+	padding:0.5rem 0 0.3rem 1rem !important;
+}
+
+.recipes_archive_filters .fa.fa-search {
+    font-size: 2.5rem;
+    position: absolute;
+    right: 1.5rem;
+    top: 0.75rem;
+    z-index: 1;
+    color:$saags-light-brown;
+}
+
+@media #{$large-up}{
+	body.post-type-archive-recipes .homepage_recipes_recipe {
+		width:31.33333%;
+		margin:1%;
+	}
+}
+
+.recipes_archive_submit_a_recipe {
+	display:block;
+	padding:12.5% 0;
+}
+
+.recipes_archive_submit_a_recipe h2, .recipes_archive_submit_a_recipe div, .homepage_recipes_recipe.submit_a_recipe div {
+	color:$white;
+	// font-family: 'UniversLTPro-65Bold';
+}
+
+.opaque-green h2.burford {
+	border-bottom: 1px solid #fff;
+	padding-bottom:5px;
+	line-height: 100%;
+	font-size:2rem;
+}
+
+.recipes_archive_submit_a_recipe h2 {
+	font-size:7rem;
+	line-height: 90%;
+	margin-top:1rem;
+	text-decoration:underline;
+}
+
+.recipes_archive_submit_a_recipe div {
+	font-size:3rem;
+	padding:0 0.75rem;
+	display:inline-block;
+	border:1px solid $white;
+}
+
+.green-button {
+	color:$white !important;
+    padding: 0 1.75rem;
+    font-family: 'UniversLTPro-65Bold';
+    display: inline-block;
+    margin: 3rem 0;
+    font-size: 1.35rem;
+    background:$saags-green;
+}
+
+.green-button:hover {
+	background:lighten($saags-green,8%);
+}
+
+.recipes_color_overlay {
+	background:rgba(0,0,0,0.3);
+}
+
+.recipes_color_overlay.opaque-green {
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-flex-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-flex-pack: center;
+	flex-pack: center;
+	-webkit-box-pack: center;
+	box-pack: center;
+	justify-content: center;
+	background:$saags-pea-green;
+}
+
+.recipes_color_overlay.opaque-green .see_recipe_cta {
+	border-color:$white;
+}
+
+body.post-type-archive-recipes .see_recipe_cta {
+	display:none;
+}
+
+body.post-type-archive-recipes .submit_a_recipe .see_recipe_cta {
+	display:inline-block;
+}
+
+body.post-type-archive-recipes .all-recipes-container {
+	display:none;
+}
+
+.load-more-button {
+	font-size: 2rem;
+}
+
+@media #{$large-up}{
+	.load-more-button {
+		font-size: 1.25rem;
+	}
+}
+
+@media #{$large-up}{
+	.filter-dropdown {
+		width:100%;
+		margin:0 1% !important;
+	}
+
+	.recipes_archive_filters input, .recipes_archive_filters select {
+		font-size:1rem !important;
+		padding:0.5rem 1rem 0rem !important;
+	}
+	.sort_by {
+		font-size:1.2rem;
+	}
+
+	.recipes_archive_filters .fa.fa-search {
+	    font-size: 1rem;
+	    top: 0.3rem;
+	}
+	.select2-container .select2-choice {
+		padding: 0.25rem 0 0.25rem 0.5rem;
+		font-size:0.7rem;
+		line-height: 100%;
+	}
+}
+
+.seventyfive {
+	width:75% !important;
+	margin-left: 12.5% !important;
+}
+
+.recipes_slider_container {
+	.slick-prev, .slick-next {
+		top:37%;
+		@media #{$large-up}{
+			top:44%;
+		}
+	}
+}
+
+/* This hides part of a homepage widget on the recipes archive page that is there temporarily until we have recipes in the system. Remove it once you've built out this page's recipes loop */
+
+body.post-type-archive-recipes .homepage_recipes_header {
+	display:none !important;
+}
+
+body.post-type-archive-recipes {
+	.reveal-modal {
+		max-width:50rem;
+		padding:3.5rem !important;
+	}
+}

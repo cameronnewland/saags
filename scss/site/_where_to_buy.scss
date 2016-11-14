@@ -1,0 +1,67 @@
+.where_to_buy_hero {
+	padding-top:25.78125%;
+	background-image:url(../assets/img/products/products-hero-deli-meats.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+
+@media #{$large-up}{}
+
+.page-where-to-buy {
+	font-size:2rem;
+	@media #{$large-up}{
+		font-size:1rem;
+	}
+	.lighter-grey-bg {
+		padding:6rem 0;
+		a {
+			display:block;
+			color:$white;
+			transition:0.5s;
+			&:hover {
+				color:darken($white,30%);
+				transition:0.5s;
+			}
+		}
+		.column.small-12.large-10.large-offset-1 {
+			text-align:center;
+			@media #{$large-up}{
+				text-align:left;
+			}
+		}
+	}
+	.dark-blue-bg {
+		padding:6rem 0;
+		.amazon-orange {
+			padding-bottom:3rem;
+		}
+		.amazon {
+			margin:4rem 0 2rem;
+		}
+		.amazon-orange.burford {
+			border-bottom: 1px solid $amazon-orange;
+			padding:0;
+			transition:0.5s;
+			&:hover {
+				color:darken($amazon-orange,10%);
+				border-color:darken($amazon-orange,10%);
+				transition:0.5s;
+			}
+			font-size:3rem;
+			@media #{$large-up}{
+				font-size:1.5rem;
+			}
+		}
+	}
+	.light-brown {
+		display:inline-block;
+		margin-bottom:2rem;
+	}
+	.where_to_buy_white_balloon {
+		padding:1rem;
+		max-width:250px;
+		margin:0 auto;
+		background-color:#fff;
+		border-radius:15px;
+	}
+}

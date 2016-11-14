@@ -1,0 +1,120 @@
+.page-newsroom {
+	background-color:$white;
+	.row {
+		.column.small-7 {
+			@media #{$large-up}{
+				padding-left:3rem;
+			}
+		}
+	}
+	.light-brown-button-container {
+		display:block;
+		text-align:center;
+		a.light-brown {
+			display:inline-block;
+			margin:0 auto;
+			border-bottom:1px solid $saags-light-brown;
+			font-size:1.5rem;
+		}
+	}
+}
+
+.newsroom_hero {
+	padding-top:25%;
+	background-image:url(../assets/img/newsroom/newsroom-hero.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+
+.newsroom_two_up {
+	padding:5rem 0;
+}
+
+@media #{$large-up}{
+	.newsroom_three_up {
+		margin:3rem 0;
+	}
+	.newsroom_three_up .column {
+		padding-left:3rem;
+		position:relative;
+		padding-bottom:3rem;
+	}
+}
+
+.newsroom_featured_post_title {
+	font-size:1.8rem;
+	margin-top:0;
+	margin-bottom:2rem;
+	line-height:100%;
+	color:$saags-grey;
+	padding-bottom:0.5rem;
+	border-bottom:1px solid $black;
+}
+
+@media #{$large-up}{
+	.newsroom_featured_post_title {
+		font-size:2.5rem;
+	}
+}
+
+.newsroom_featured_post_excerpt {
+	font-size:1.5rem;
+	line-height:150%;
+	color:$saags-grey;
+}
+
+@media #{$large-up}{
+	.newsroom_featured_post_excerpt {
+		font-size:1rem;
+	}
+}
+
+.newsroom_category_label {
+	text-transform: uppercase;
+	font-size:2.5rem;
+	text-align:center;
+	margin:2rem auto;
+	color:$black;
+	border-bottom: 1px solid black;
+}
+
+@media #{$large-up}{
+	.newsroom_category_label {
+		font-size:2rem;
+	}
+}
+
+.newsroom_category_post {
+	display:none;
+}
+
+.newsroom_category_post:nth-child(2), .newsroom_category_post:nth-child(3), .newsroom_category_post:nth-child(4), .newsroom_category_post:nth-child(5) {
+	display:block;
+}
+
+.newsroom_category_post a {
+	font-size:1.75rem;
+	line-height:120%;
+	color:$saags-grey;
+	display:block;
+	margin:3rem 0;
+}
+
+@media #{$large-up}{
+	.newsroom_category_post a {
+		font-size:1rem;
+	}
+	.newsroom_category_post:hover a {
+		font-weight:bold;
+	}
+}
+
+.featured_post_news_source_logo {
+	max-width:205px;
+	height:auto;
+}
+
+.newsroom_featured_post_image {
+	width:100%;
+	height:auto;
+}

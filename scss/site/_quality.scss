@@ -1,0 +1,38 @@
+.page-quality {
+	.quality_hero {
+		background-image:url(../assets/img/quality/hero.jpg);
+	}
+	.row {
+		padding:5rem 0;
+		border-bottom:1px solid $white;
+		@media #{$large-up}{
+			padding:4rem 0;
+		}
+		p {
+			font-size:1.75rem;
+			line-height:150%;
+			max-width:100%;
+			@media #{$large-up}{
+				font-size:0.95rem;
+			}
+		}
+	}
+	.row.em_container {
+		padding:0 0 5rem;
+		border-bottom:none;
+	}
+	.row.minimally_processed {
+		padding:5rem 0 3rem;
+		border-bottom:none;
+	}
+	img {
+		padding:2rem 0 2rem;
+	}
+	em {
+		display:block;
+		font-size:1.4rem;
+		@media #{$large-up}{
+			font-size:1rem;
+		}
+	}
+}
